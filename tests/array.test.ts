@@ -1,26 +1,35 @@
-describe('Array', function() {
-    it("should same with javascript", function() {
-        const names: string[] = ["Ida", "Danuartha"]
-        const values: number[] = [1,2,3,4,5]
+describe('Array', function () {
+    it('should same with javascript', function () {
 
-        console.info(names)        
-        console.info(values)        
-    })
+        const names: string[] = ["eko", "budi", "joko"];
+        const values: number[] = [1,2,3];
 
-    it("should support readonly array", function() {
-        const hobbies: ReadonlyArray<string> = ["Membaca", "Menulis"]
+        console.info(names);
+        console.info(values);
 
-        console.info(hobbies)        
-        console.info(hobbies[0])        
-        console.info(hobbies[1])        
-    })
+    });
 
-    it("should support tupple", function() {
-        const person: readonly [string, string, number] = ["Danuartha", "Coding", 18]
+    it('should support readonly array', function () {
 
-        console.info(person)        
-        console.info(person[0])        
-        console.info(person[1])        
-        console.info(person[2])        
-    })
-})
+        const hobbies: ReadonlyArray<string> = ["Membaca", "Menulis"];
+        console.info(hobbies);
+        console.info(hobbies[0]);
+        console.info(hobbies[1]);
+
+        // hobbies[0] = "Main Game";
+
+    });
+
+    it('should support tupple', function () {
+
+        const person : readonly [string, string, number] = ["Eko", "Khannedy", 30];
+        console.info(person);
+
+        console.info(person[0]);
+        console.info(person[1]);
+        console.info(person[2]);
+
+        // person[0] = "Budi";
+
+    });
+});
